@@ -1,7 +1,7 @@
 if (Meteor.isClient) {
   Template.body.helpers({
     subjects: function () {
-      return Subjects.find().fetch();
+      return Subjects.find();
     }
   })
 }

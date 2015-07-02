@@ -2,12 +2,18 @@
   <title>webcampus</title>
 </head>
 
+
 <body>
   <div class="container">
     <ul>
       {{#each subjects}}
-        {{> subject.name}}
+        {{> subject}}
       {{/each}}
     </ul>
   </div>
 </body>
+
+
+<template name="subject">
+  <li>{{name}}</li>
+</template>
