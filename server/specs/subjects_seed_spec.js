@@ -13,7 +13,7 @@ T.suite(function() {
       it('should create new subjects', function() {
         Subjects.find().count().should.be.gt(0)
       })
-
+                    
     })
 
     context('there are already existing subjects in the DB', function() {
@@ -27,7 +27,5 @@ T.suite(function() {
         Subjects.find().count().should.eq(1) // the subject created before running the seed
       })
     })
-
   })
-
 })
