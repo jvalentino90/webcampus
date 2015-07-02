@@ -1,5 +1,5 @@
-Template.subjectList.helpers({
-    subjects: function () {
-      return Subjects.find();
-    }
-  })
+Template.subject_list.helpers({
+  subjects: function () {
+    return Subjects.find()
+  }
+})
