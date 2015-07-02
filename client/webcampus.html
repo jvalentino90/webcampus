@@ -1,0 +1,17 @@
+<head>
+  <title>Webcampus</title>
+</head>
+
+
+<body>
+  <div class="container">
+    {{> subjectList}}
+  </div>
+</body>
+
+
+<template name="subjectList">
+  {{ #each subjects }}
+    <li>{{name}}</li>
+  {{ /each }}
+</template>
