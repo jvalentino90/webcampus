@@ -1,11 +1,11 @@
 Template.create_subject.events({
   'click #boton': function (event, template) {
-    var text = event.target.subject.value;
+    var text = template.$('#subject').val();
     Subjects.insert({
       name: text
     });
 
-    event.target.text.value = "";
+    template.$('#subject').val('') 
 
     // Prevent default form submit
     return false;
