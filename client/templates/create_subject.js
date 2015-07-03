@@ -1,5 +1,5 @@
 Template.create_subject.events({
-  'click button': function (event, template) {
+  'click #boton': function (event, template) {
     var text = event.target.subject.value;
     Subjects.insert({
       name: text
